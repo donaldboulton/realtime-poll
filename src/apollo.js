@@ -16,7 +16,7 @@ const scheme = (proto) => {
 }
 
 const wsurl = `${scheme('ws')}://${HASURA_GRAPHQL_ENGINE_HOSTNAME}/v1alpha1/graphql`;
-const httpurl = `${scheme('http')}://${HASURA_GRAPHQL_ENGINE_HOSTNAME}/v1alpha1/graphql`;
+const httpurl = `${scheme('https')}://${HASURA_GRAPHQL_ENGINE_HOSTNAME}/v1alpha1/graphql`;
 
 const wsLink = new WebSocketLink({
   uri: wsurl,
